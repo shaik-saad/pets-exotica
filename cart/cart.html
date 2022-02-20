@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist | Pets Exotica</title>
+
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="https://sleek-ui.vercel.app/css/sleekui.css">
+
+    <!-- Pets Excotica site css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="../index.html">PETS EXOTICA</a>
+            </div>
+            
+            <div class="navbar-section">
+                <form class="nav-form">
+                    <input class="form-field" type="search" name="nav-search" placeholder="search...">
+                </form>
+                <ul class="nav-list">
+                    <li class="nav-list-item active px-4">
+                        <a href="../wishlist/wishlist.html" class="nav-link">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-item px-4">
+                        <a href="./cart.html" class="nav-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn btn-secondary-outline">Logout</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <main class="main-container mb-6">
+        <div class="cart-container">
+            <!-- cart heading -->
+            <div class="cart-heading my-6 ml-2">
+                <h3>My Cart</h3>
+                <span class="text-sm text-secondary">2 items</span>
+            </div>
+            
+            <div class="cart-details-container">
+                <!-- cart items start here -->
+                <div class="cart-items-container">
+                    <div class="card card-horizontal">
+                        <img class="card-image card-image-vertical" src="../assets/ArdenGrangeGrainFreeFreshChicken_Potato.jpg" 
+                            alt="cat potrait image for card">
+                        <div class="card-body product-body">
+                            <div class="card-content">
+                                <h6 class="card-title lh-5 fw-semi-bold">Arden Grange Grain Free Fresh Chicken & Potato Dry Kitten Food</h6>
+                                <h5>Rs 520 <span class="text-sm fw-light before-price text-secondary">Rs 600</span></h5>
+                            </div>
+                            <div class="card-actions">
+                                <div class="quantity-actions">
+                                    <button class="quantity-btn ecrease-quatity">-</button>
+                                    <span class="quatity-value px-2">0</span>
+                                    <button class="quantity-btn increase-quatity">+</button>
+                                </div>
+                                <button class="btn btn-secondary">Remove from Cart</button>
+                                <button class="btn btn-secondary-outline">Move to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card card-horizontal">
+                        <img class="card-image card-image-vertical" src="../assets/Me-OSeafood.jpg" 
+                            alt="cat potrait image for card">
+                        <div class="card-body product-body">
+                            <div class="card-content">
+                                <h6 class="card-title lh-5 fw-semi-bold">Me-O Sea Food Dry Cat Food</h6>
+                                <h5>Rs 500 <span class="text-sm fw-light before-price text-secondary">Rs 540</span></h5>
+                            </div>
+                            <div class="card-actions">
+                                <div class="quantity-actions">
+                                    <button class="quantity-btn ecrease-quatity">-</button>
+                                    <span class="quatity-value px-2">0</span>
+                                    <button class="quantity-btn increase-quatity">+</button>
+                                </div>
+                                <button class="btn btn-secondary">Remove from Cart</button>
+                                <button class="btn btn-secondary-outline">Move to Wishlist</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- cart items end here -->
+                
+                <!-- cart amount details container start here -->
+                <div class="cart-amount-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>PRICE DETAILS</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="price-details-row">
+                                <div>Price (2 items)</div>
+                                <div>1140</div>
+                            </div>
+                            <div class="price-details-row">
+                                <div>Discount</div>
+                                <div class="text-success">- 120</div>
+                            </div>
+                            <div class="price-details-row">
+                                <div>Delivery Charges</div>
+                                <div class="text-success">Free</div>
+                            </div>
+                            <div class="price-details-row total-row fw-semi-bold">
+                                <div>Total Amount</div>
+                                <div>1020</div>
+                            </div>
+                            <button class="btn btn-primary">PLACE ORDER</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart amount details container ends here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">PETS EXOTICA</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
+</body>
+</html>
