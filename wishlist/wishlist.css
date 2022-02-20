@@ -1,0 +1,45 @@
+.wishlist-container {
+    width: 90%;
+    margin: auto;
+}
+
+.wishlist-items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-items: center;
+}
+
+.wishlist-added-badge i {
+    color: var(--danger-color);
+}
+
+.product-body {
+    justify-content: space-between;
+    min-height: 8.5rem;
+}
+.product-body button{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 600px) {
+    .wishlist-items-container {
+        grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wishlist-items-container {
+        grid-template-columns: repeat(auto-fit, minmax(252px, 1fr));
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    .wishlist-items-container {
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    }
+}
