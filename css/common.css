@@ -5,6 +5,10 @@
     z-index: 1;
 }
 
+.header-container .nav-brand {
+    font-weight: var(--font-weight-semi-bold);
+}
+
 .inline-label {
     display: inline;
 }
