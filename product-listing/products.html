@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Pets Exotica</title>
+
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="https://sleek-ui.vercel.app/css/sleekui.css">
+
+    <!-- Pets Excotica site css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./products.css">
+</head>
+<body>
+
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="../index.html">PETS EXOTICA</a>
+            </div>
+            
+            <div class="navbar-section">
+                <form class="nav-form">
+                    <input class="form-field" type="search" name="nav-search" placeholder="search...">
+                </form>
+                <ul class="nav-list">
+                    <li class="nav-list-item active px-4">
+                        <a href="../wishlist/wishlist.html" class="nav-link">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-item px-4">
+                        <a href="../cart/cart.html" class="nav-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a class="btn btn-secondary" href="../authentication/login/login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <div class="product-page-container">
+
+        <!-- Filters side bar starts here -->
+        <aside class="aside-container px-4">
+            
+            <div class="filter-popup text-center fw-semi-bold p-6">Filter</div>
+            <!-- Filters heading -->
+            <div class="products-filter-container">
+                <div class="filter-heading mt-6">
+                    <h5>Filters</h5>
+                    <button class="btn clear-filters-btn">Clear</button>
+                </div>
+
+                <!-- Price filtering -->
+                <div class="price-filter">
+                    <div class="fw-semi-bold">Price</div>
+                    <input type="range" id="price" class="form-field" min="0" value="1000" max="2000" step="100">
+                </div>
+    
+                <!-- Category filtering -->
+                <div class="category-filter">
+                    <div class="fw-semi-bold">Category</div>
+                    <label class="form-label" for="category-input">
+                        <input class="form-checkbox" type="checkbox" name="category" id="category-input">
+                        Dry Food
+                    </label>
+                    <label class="form-label" for="category-two-input">
+                        <input class="form-checkbox" type="checkbox" name="category" id="category-two-input">
+                        Wet Food
+                    </label>
+                </div>
+    
+                <!-- Rate filtering -->
+                <div class="rating-filter">
+                    <div class="fw-semi-bold">Rating</div>
+                    <label class="form-label" for="four-stars">
+                        <input class="form-radio" type="radio" name="rating" id="four-stars" checked>
+                        4 Stars & above
+                    </label>
+                    <label class="form-label" for="three-stars">
+                        <input class="form-radio" type="radio" name="rating" id="three-stars">
+                        3 Stars & above
+                    </label>
+                    <label class="form-label" for="two-stars">
+                        <input class="form-radio" type="radio" name="rating" id="two-stars">
+                        2 Stars & above
+                    </label>
+                    <label class="form-label" for="one-star">
+                        <input class="form-radio" type="radio" name="rating" id="one-star">
+                        1 Star & above
+                    </label>
+                </div>
+    
+                <!-- Sort by filtering -->
+                <div class="sort-by-filter">
+                    <div class="fw-semi-bold">Sort by</div>
+                    <label class="form-label" for="low-to-high-sort">
+                        <input class="form-radio" type="radio" name="sort" id="low-to-high-sort" checked>
+                        Price - Low to High
+                    </label>
+                    <label class="form-label" for="high-to-low-sort">
+                        <input class="form-radio" type="radio" name="sort" id="high-to-low-sort">
+                        Price - High to Low
+                    </label>
+                </div>
+            </div>
+        </aside>
+        <!-- Filters side bar ends here -->
+        
+        <!-- Main container Starts here -->
+        <main class="products-main-container mb-6">
+
+            <!-- cart heading -->
+            <div class="cart-heading my-6 ml-4">
+                <h5>Products</h5>
+                <span class="text-sm text-secondary">Showing 5 items</span>
+            </div>
+
+            <!-- products start here -->
+            <div class="products-container ml-2">
+            <div class="card card-shadow">
+                <span class="card-badge-heart wishlist-added-badge">
+                    <i class="fas fa-heart"></i>
+                </span>
+                <img class="card-image card-image-vertical" src="../assets/ArdenGrangeGrainFreeFreshChicken_Potato.jpg" 
+                alt="cat potrait image for card">
+                <div class="card-body product-body">
+                    <div class="card-content">
+                        <h6 class="card-title lh-5 fw-semi-bold">Arden Grange Grain Free Fresh Chicken & Potato Dry Kitten Food</h6>
+                    </div>
+                    <div class="card-actions">
+                        <h5>Rs 520</h5>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+                <span class="card-badge-heart wishlist-added-badge">
+                    <i class="fas fa-heart"></i>
+                </span>
+                <img class="card-image card-image-vertical" src="../assets/Me-OSeafood.jpg" 
+                alt="cat potrait image for card">
+                <div class="card-body product-body">
+                    <div class="card-content">
+                        <h6 class="card-title lh-5 fw-semi-bold">Me-O Sea Food Dry Cat Food</h6>
+                    </div>
+                    <div class="card-actions">
+                        <h5>Rs 500</h5>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+                <span class="card-badge-heart wishlist-added-badge">
+                    <i class="fas fa-heart"></i>
+                </span>
+                <img class="card-image card-image-vertical" src="../assets/MatissePremiumSalmon_Tuna.jpg" 
+                alt="cat potrait image for card">
+                <div class="card-body product-body">
+                    <div class="card-content">
+                        <h6 class="card-title lh-5 fw-semi-bold">Matisse Premium Salmon & Tuna Dry Cat Food</h6>
+                    </div>
+                    <div class="card-actions">
+                        <h5>Rs 437</h5>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+                <span class="card-badge-heart wishlist-added-badge">
+                    <i class="fas fa-heart"></i>
+                </span>
+                <img class="card-image card-image-vertical" src="../assets/RoyalCaninMotherandBabycat.jpg" 
+                alt="cat potrait image for card">
+                <div class="card-body product-body">
+                    <div class="card-content">
+                        <h6 class="card-title lh-5 fw-semi-bold">Royal Canin Mother and Babycat Cat Food</h6>
+                    </div>
+                    <div class="card-actions">
+                        <h5>Rs 600</h5>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+                <span class="card-badge-heart wishlist-added-badge">
+                    <i class="fas fa-heart"></i>
+                </span>
+                <img class="card-image card-image-vertical" src="../assets/WhiskasTunaAdult.jpg" 
+                alt="cat potrait image for card">
+                <div class="card-body product-body">
+                    <div class="card-content">
+                        <h6 class="card-title lh-5 fw-semi-bold">Whiskas Tuna Adult Dry Cat Food</h6>
+                    </div>
+                    <div class="card-actions">
+                        <h5>Rs 520</h5>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- products start here -->
+            </div>
+        </main>
+        <!-- Main container ends here -->
+    </div>
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">PETS EXOTICA</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
+</body>
+</html>
