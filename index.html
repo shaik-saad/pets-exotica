@@ -5,8 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Pets Exotica</title>
+
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="https://sleek-ui.vercel.app/css/sleekui.css">
+
+    <!-- Pets Excotica site css -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-    <p>Home</p>
+
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="index.html">PETS EXOTICA</a>
+            </div>
+            
+            <div class="navbar-section">
+                <form class="nav-form">
+                    <input class="form-field" type="search" name="nav-search" placeholder="search...">
+                </form>
+                <ul class="nav-list">
+                    <li class="nav-list-item active px-4">
+                        <a href="../wishlist/wishlist.html" class="nav-link">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-item px-4">
+                        <a href="../cart/cart.html" class="nav-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a class="btn btn-secondary" href="../authentication/login/login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Main container Starts here -->
+    <main class="products-main-container mb-6">
+
+        <!-- hero banner-->
+        <div class="hero-banner">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./assets/hero-image-portrait.jpg">
+                <source media="(min-width: 769px)" srcset="./assets/hero-image.jpg">
+                <img src="./assets/hero-image.jpg" class="image-responsive" alt="cat banner image">
+            </picture>
+        </div>
+
+        <div class="category-heading text-center my-8">
+            <h3>SHOP FOR CATS</h3>
+        </div>
+        <div class="categories-container mx-4">
+            
+            <!-- categories start here -->
+            <div class="category-container">
+                <figure>
+                    <img class="image-responsive" src="./assets/cat-food-category.png" 
+                    alt="cat food image">
+                    <figcaption class="bg-primary category-title">Food</figcaption>
+                </figure>
+            </div>
+
+            <div class="category-container">
+                <figure>
+                    <img class="image-responsive" src="./assets/cat-litter.png" 
+                    alt="cat litter image">
+                    <figcaption class="bg-primary category-title">Litter</figcaption>
+                </figure>
+            </div>
+
+            <div class="category-container">
+                <figure>
+                    <img class="image-responsive" src="./assets/cat-accessories.png" 
+                    alt="cat accessories image">
+                    <figcaption class="bg-primary category-title">Accessories</figcaption>
+                </figure>
+            </div>
+
+            <div class="category-container">
+                <figure>
+                    <img class="image-responsive" src="./assets/cat-furniture.jpg" 
+                    alt="cat furniture image">
+                    <figcaption class="bg-primary category-title">Toys & Furnitures</figcaption>
+                </figure>
+            </div>
+        <!-- categories end here -->
+        </div>
+    </main>
+    <!-- Main container ends here -->
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">PETS EXOTICA</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
 </body>
 </html>
