@@ -9,9 +9,11 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 }
+
 .category-container {
     max-width: 26.5rem;
     max-height: 26.5rem;
+    cursor: pointer;
 }
 
 .category-container figure{
