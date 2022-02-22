@@ -43,7 +43,6 @@ Browse the **[website](https://pets-exotica.vercel.app)** here.
 <br/>
 
 ## **Author**
-<hr>
 
 - **Twitter** - [@shaiksaadullah](https://twitter.com/shaiksaadullah)
 - **LinkedIn** - [/shaik-saad](https://www.linkedin.com/in/shaik-saad)
